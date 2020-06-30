@@ -1,0 +1,15 @@
+.side-bar
+  .side-bar__user-name
+    .top-items
+      %p.top-items__name Soya
+      .top-items__iconlist
+        .top-items__icon
+          = icon('fas', 'edit')
+        .top-items__icon
+          = icon('fas', 'cog')
+  .side-bar__groups
+    = link_to "#", class:"group" do
+      %p.group__group-name
+        test
+      %p.group__message
+        まだメッセージがありません

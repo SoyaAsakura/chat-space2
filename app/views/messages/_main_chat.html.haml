@@ -1,0 +1,22 @@
+.main-chat
+  .main-chat__header
+    .main-chat__header__group 
+      %p.group-name test
+      %P.member-name Member:Soya
+    .Edit-btn
+      = link_to "#" do
+        Edit
+  .message-box
+    .message-box__info
+      %p.messageinfo-name Soya
+      %p.messageinfo-date 2020年06月26日 12時07分
+    .message 
+      %p.message-content this is first message
+  .form
+    %form.new_message
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", class: "submit-btn"}
